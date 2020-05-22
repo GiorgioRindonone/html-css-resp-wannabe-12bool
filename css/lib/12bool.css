@@ -1,6 +1,6 @@
 /* framework di griglia 12 colonne */
 
-.raw {
+.row {
   margin:0 auto;
 }
 
@@ -8,7 +8,7 @@
   float: left;
 }
 
-.raw::after {
+.row::after {
   content: "";
   display: table;
   clear: both;
@@ -17,7 +17,7 @@
 
 /* MS regole di colonna smartphone fino ai 768*/
 
-@media all and (max-width:768px){
+@media all and (max-width:567px){
   .col-xs-1 {
     width: calc((100% / 12) * 1);
   }
@@ -99,7 +99,7 @@
 }
 
 /* MD framework tablet da 769 ai 992*/
-@media all and (min-width:769px) and (max-width:992px){
+@media all and (min-width:568px) and (max-width:1024px){
 
   .col-md-1 {
     width: calc((100% / 12) * 1);
@@ -181,7 +181,7 @@
 }
 
 /* LG framework dekstop dai 993*/
-@media all and (min-width:993px){
+@media all and (min-width:1025px){
   .col-lg-1 {
     width: calc((100% / 12) * 1);
   }
